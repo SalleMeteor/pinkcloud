@@ -1,0 +1,48 @@
+{
+  "builtBy": "meteor/10",
+  "sliceDependencies": {
+    "browser.json": {
+      "files": {
+        "/Users/Vladi/my_app/packages/bootstrap-3/package.js": "ca634ceb504401adbf4cd4d88186cbb051dcf41f",
+        "/Users/Vladi/my_app/packages/bootstrap-3/bootstrap-3/css/bootstrap.css": "f9aee2a38a135a2d63d30f9bcb1247dc4f927d4b",
+        "/Users/Vladi/my_app/packages/bootstrap-3/bootstrap-3/js/bootstrap.js": "fd607f85d598503b24d7799722db29fec4de1ef6",
+        "/Users/Vladi/my_app/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.eot": "f3a9a3b609133c3d21d6b42abbf7f43bd111df72",
+        "/Users/Vladi/my_app/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.ttf": "aafafdc09404c4aa4447d7e898a2183def9cc1b1",
+        "/Users/Vladi/my_app/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.svg": "3ef91859cbec165ac97df6957b176f69e8d6a04d",
+        "/Users/Vladi/my_app/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.woff": "22037a3455914e5662fa51a596677bdb329e2c5c",
+        "/Users/Vladi/my_app/packages/bootstrap-3/bootstrap-override.css": "8e259eec4e3f66dd1b61a1833aeb561b5d94af65"
+      },
+      "directories": []
+    },
+    "os.json": {
+      "files": {
+        "/Users/Vladi/my_app/packages/bootstrap-3/package.js": "ca634ceb504401adbf4cd4d88186cbb051dcf41f"
+      },
+      "directories": []
+    },
+    "tests.browser.json": {
+      "files": {
+        "/Users/Vladi/my_app/packages/bootstrap-3/package.js": "ca634ceb504401adbf4cd4d88186cbb051dcf41f"
+      },
+      "directories": []
+    },
+    "tests.os.json": {
+      "files": {
+        "/Users/Vladi/my_app/packages/bootstrap-3/package.js": "ca634ceb504401adbf4cd4d88186cbb051dcf41f"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/Vladi/my_app/packages/bootstrap-3/package.js": "ca634ceb504401adbf4cd4d88186cbb051dcf41f"
+    },
+    "directories": []
+  },
+  "pluginProviderPackages": {
+    "bootstrap-3": "/Users/Vladi/my_app/packages/bootstrap-3",
+    "meteor": "/Users/Vladi/.meteor/packages/meteor/8e32057b0d",
+    "jquery": "/Users/Vladi/.meteor/packages/jquery/2ff5a27117"
+  },
+  "source": "/Users/Vladi/my_app/packages/bootstrap-3"
+}
