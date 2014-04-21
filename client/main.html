@@ -8,12 +8,13 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="{{pathFor 'home'}}"><img src="/images/pinkcloud-logo.png" width="50px;"/></a>
     </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+          <li><a href="{{pathFor 'stuff'}}">Stuff</a></li>
         {{#if currentUser}}
         <li><a href="{{pathFor 'user'}}">User</a></li>
         {{/if}}
-        <li><button type="button" class="navbar-text navbar-right">{{>loginButtons}}</button></li>
+        <li><a class="dropdown-toggle">{{>loginButtons}}</a></li>
       </ul>
     </div>
   </div>
