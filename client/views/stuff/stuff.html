@@ -1,19 +1,22 @@
 <template name="stuff">
-    <div class="stuffpage">
+    <div id="learnedtoday">
+        <div class="learnedtitle">
+            <h1><p class="text-center">Some stuff that people learned...</p></h1>
+        </div>
         <div class="input-group input-group-lg">
             <input type="text" class="form-control"  placeholder="#hashtag" id="hgfield">
             <span class="input-group-btn">
                 <button class="btn btn-default" type="button" id="searchbtn">Search</button>
             </span>
         </div>
-        <div>
-            <h1><p class="text-center">Some stuff that people learned...</p></h1>
-        </div>
+    </div>
+
+        <div class="lineseparator"></div>
+
         <div class="stufflist">
             {{#each post}}
-            <h6>{{name}}<small> {{date}}</small></h6>
+            <h5>{{{name}}}<small> {{date}}</small></h5>
             {{/each}}
-            <a href="#" id="viewmore">+ <span class="viewmore">view more</span></a>
+            <a href="#" id="viewmore" class="plusviewmore">+ <span class="viewmore">view more</span></a>
         </div>
-    </div>
 </template>

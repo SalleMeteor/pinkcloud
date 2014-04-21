@@ -9,8 +9,9 @@ Template.stuff.helpers({
         }
         var aux = new Array();
         var index = 0;
+        var hashtag_regexp = /#([a-zA-Z0-9]+)/g;
         stuff.forEach(function (stf) {
-            aux[index] = {'name' : stf.name , 'date' : moment(stf.date).fromNow()};
+            aux[index] = {'name' : stf.name.replace(hashtag_regexp, '<span class="hashtag">#$1</span>') , 'date' : moment(stf.date).fromNow()};
             index += 1;
         });
         return aux;

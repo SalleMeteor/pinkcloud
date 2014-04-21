@@ -31,7 +31,27 @@ h1{
     text-align: center;
     margin-top: 20px;
 }
+.plusviewmore{
+    color: #f13c76;
+}
+.plusviewmore:hover{
+    color: #e20048;
+}
 .viewmore{
     font-size: 10pt;   
+    color: #f13c76;
 }
-
+.hashtag{
+    color: #428bca;   
+}
+.navbar_logo{
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    margin-left: -23px;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #E7E7E7;
+}

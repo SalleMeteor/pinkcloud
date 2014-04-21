@@ -5,15 +5,19 @@
 <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="{{pathFor 'home'}}"><img src="/images/pinkcloud-logo.png" width="50px;"/></a>
-    </div>
+      
+    <a class="navbar_logo" href="{{pathFor 'home'}}"><img src="/images/pinkcloud-logo.png" width="50px;"/></a>
+      
     <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
           <li><a href="{{pathFor 'stuff'}}">Stuff</a></li>
         {{#if currentUser}}
         <li><a href="{{pathFor 'user'}}">User</a></li>
         {{/if}}
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse navbar-left" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
         <li><a class="dropdown-toggle">{{>loginButtons}}</a></li>
       </ul>
     </div>

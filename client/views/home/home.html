@@ -10,6 +10,8 @@
                 <button class="btn btn-default" type="button" id="add">Yup</button>
             </span>
         </div>
+        {{else}}
+            <h3><p class="text-center">Please sign in to write</p></h3>
         {{/if}}
     </div>
     <div class="lineseparator"></div>
@@ -17,11 +19,11 @@
         <div>
             <h2><p class="text-center">Some stuff that people learned...</p></h2>
         </div>
-        <div class="stufflist">
+        <div class="stufflist" id="stufflist">
             {{#each post}}
-            <h6>{{name}}<small> {{date}}</small></h6>
+            <h6>{{{name}}}<small> {{date}}</small></h6>
             {{/each}}
-            <a href="/stuff">+ <span class="viewmore">view more</span></a>
+            <a href="/stuff" class="plusviewmore">+ <span class="viewmore">view more</span></a>
         </div>
     </div>
     
