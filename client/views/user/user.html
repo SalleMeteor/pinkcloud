@@ -1,0 +1,28 @@
+<template name="home">
+    <div id="learnedtoday">
+        <div class="learnedtitle">
+            <h1><p class="text-center">What did you learned today ?</p></h1>
+        </div>
+        {{#if currentUser}}
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control"  placeholder="Write something..." id="post">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" id="add">Yup</button>
+            </span>
+        </div>
+        {{/if}}
+    </div>
+    <div class="lineseparator"></div>
+    <div class="learnedstuff">
+        <div>
+            <h2><p class="text-center">Some stuff that people learned...</p></h2>
+        </div>
+        <div class="stufflist">
+            {{#each post}}
+            <h6>{{name}} <small>{{date}}</small></h6>
+            By: {{user}}
+            {{/each}}
+        </div>
+    </div>
+    
+</template>
