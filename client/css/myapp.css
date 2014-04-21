@@ -18,11 +18,14 @@ h1{
     margin-right: auto;
     border-bottom: 1px dashed rgb(200,200,200);
 }
-.learnedstuff{
+.stuffpage, .learnedstuff{
     margin-top: 30px; 
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+.stuffpage{
+    margin-top: 100px;   
 }
 .stufflist{
     text-align: center;
@@ -31,3 +34,4 @@ h1{
 .viewmore{
     font-size: 10pt;   
 }
+
