@@ -2,10 +2,10 @@ Template.stuff.helpers({
 	post: function(){
         var hs = Session.get("hashtag");
         if(hs){
-            var stuff = Post.find({hashtag : hs}, {sort: {date: -1}, limit: 20});
+            var stuff = Post.find({hashtag : hs}, {sort: {date: -1}, limit: Session.get("maxlim")});
         }
         else{
-            var stuff = Post.find({}, {sort: {date: -1}, limit: 20});                
+            var stuff = Post.find({}, {sort: {date: -1}, limit: Session.get("maxlim")});                
         }
         var aux = new Array();
         var index = 0;
@@ -22,9 +22,16 @@ Template.stuff.events({
     'click #searchbtn': function () {
     // template data, if any, is available in 'this'
         Session.set("hashtag", $("#hgfield").val());
+        Session.set("maxlim", 20);
     },
+    
+    'click #viewmore': function () {
+        Session.set("maxlim", Session.get("maxlim") + 20);
+        alert(cosa);
+    }
 });
 
 Template.stuff.created = function() {
     Session.set("hashtag", "");
+    Session.set("maxlim", 20);
 }
