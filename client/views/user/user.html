@@ -1,2 +1,14 @@
 <template name="user">
+	<div id="learnedtoday">
+        <div class="learnedtitle">
+            <h1><p class="text-center">Your Posts</p></h1>
+        </div>
+	    <div class="learnedstuff">
+        <div class="stufflist">
+            {{#each post}}
+            <h6>{{name}}</h6>
+            {{/each}}
+        </div>
+    	</div>
+    </div>
 </template>
