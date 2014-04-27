@@ -8,6 +8,6 @@ Post.allow({
     return true;
   },	
   remove: function() {
-    return true;
+    return false;
   }
 });
