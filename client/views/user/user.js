@@ -9,7 +9,7 @@ Template.user.helpers({
         var hashtag_regexp = /#([a-zA-Z0-9]+)/g;
         stuff.forEach(function (stf) {
         	if(moment(stf.date).format('MM/DD/YYYY') == date || !clicked){
-	            aux[index] = {'name' : stf.name.replace(hashtag_regexp, '<span class="hashtag">#$1</span>'), 'date' : moment(stf.date).fromNow()};
+	            aux[index] = {'name' : stf.name.replace(hashtag_regexp, '<span class="hashtag">#$1</span>'), 'date' : moment(stf.date).fromNow(),'like':stf.like};
 	            index += 1;
         	}
         });
