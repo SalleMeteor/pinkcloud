@@ -22,7 +22,7 @@
         <div class="stufflist" id="stufflist">
             {{#each post}}
             <h6>{{{name}}}<small> {{date}}</small>   
-                <span class="buttonlike" id="{{id}}"><button type="button" class="btn btn-default btn-lg" ><span  class="glyphicon glyphicon-thumbs-up"></span> </button> </span>               {{like}} likes
+                <span class="buttonlike" id="{{id}}"><button type="button" class="btn btn-default btn-xs" ><span  class="glyphicon glyphicon-thumbs-up"></span> </button> </span>           <small>{{like}} likes</small>
             </h6>
             {{/each}}
             <a href="/stuff" class="plusviewmore">+ <span class="viewmore">view more</span></a>
