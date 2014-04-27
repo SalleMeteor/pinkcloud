@@ -33,6 +33,7 @@ Template.user.rendered=function() {
 
 Template.stuff.created = function() {
     Session.set("my-datepicker", "");
+    Meteor.subscribe("allPosts");
 }
 
 $( "#my-datepicker" ).click(function() {

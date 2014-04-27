@@ -40,4 +40,5 @@ Template.stuff.events({
 Template.stuff.created = function() {
     Session.set("hashtag", "");
     Session.set("maxlim", 20);
+    Meteor.subscribe("allPosts");
 }
