@@ -17,4 +17,4 @@ PinkCloud
  Marc Dabad Planas
 
  Deployed URL:
- pinkcloud.meteor.com
+ http://pinkcloud.meteor.com
